@@ -5,6 +5,7 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+# Fixed upload-artifact version to v1 for compatibility
 permissions:
   contents: read
   pages: write
