@@ -9,6 +9,7 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/lib/motion";
+import { getAssetPath } from "@/utils/path";
 
 export const HeroContent = () => {
   return (
@@ -62,7 +63,7 @@ export const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/hero-bg.svg"
+          src={getAssetPath("hero-bg.svg")}
           alt="work icons"
           height={650}
           width={650}

@@ -1,5 +1,6 @@
 import { SkillDataProvider } from "@/components/sub/skill-data-provider";
 import { SkillText } from "@/components/sub/skill-text";
+import { getAssetPath } from "@/utils/path";
 
 import {
   BACKEND_SKILL,
@@ -90,7 +91,7 @@ export const Skills = () => {
             muted
             autoPlay
           >
-            <source src="/videos/skills-bg.webm" type="video/webm" />
+            <source src={getAssetPath("videos/skills-bg.webm")} type="video/webm" />
           </video>
         </div>
       </div>
